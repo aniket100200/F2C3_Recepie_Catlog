@@ -14,10 +14,13 @@
 
 <body>
     <nav id="navbar">
-        <img src="./cookpal.svg" alt="cookpal">
+       <div style="display: flex; align-items: center; gap: 10px;">
+            <span id="bar" style="display: none;"><i class="fa-solid fa-bars"></i></span>
+         <img src="./cookpal.svg" alt="cookpal">
+       </div>
         <div class="part2">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" style="color: green;">Home</a></li>
                 <li><a href="#">Explore</a></li>
                 <li><a href="#">Help</a></li>
             </ul>
@@ -61,7 +64,7 @@
         <div class="filter">
             <div class="filter-title">Filters</div>
             <div class="rating">
-                <div class="rating-title">
+                <div class="rating-title" style="margin: 10px;">
                     Rating
                 </div>
                 <form class="options">

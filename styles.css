@@ -121,6 +121,10 @@ letter-spacing: 0em;
 text-align: left;
 
 }
+
+
+/*search Bar*/
+
 .display
 {
     display: flex;
@@ -305,6 +309,98 @@ tr
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     margin-bottom: 50px;
+    background-color: rgb(206, 198, 198);
+    padding: 30px;
+}
+
+ul a :active{
+    background-color: green;
+}
+
+
+/*media Queries*/
+@media screen and (max-width:768px)
+{
+    #navbar>.part2{
+        display: none;
+    }
+
+    #bar
+    {
+        display: flex !important;
+    }
+
+    #hero
+    {
+       display: none;
+    }
+
+    .category>button
+    {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    #container{
+        grid-template-columns: 100%;
+    }
+
+    .rating
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .rating>.options
+    {
+        display: flex;
+        gap: 10px;
+    }
+
+    .display{
+        width: 500px !important;
+    }
+
+    .input-form >.search-item
+    {
+        width: 250x;
+    }
+
+
+    /*card*/
+    .card
+    {        
+        margin: 0;
+        font-size: small;
+        margin-right: 10px;
+    }
+
+    .card img
+    {
+        height: 100px;
+        width: 150px;
+    }
+
+    #footer .table{
+
+        display: none;
+    }
+
+    .stuff div:last-child{
+        display: none;
+    }
+
+    .social-media{
+        display: none;
+    }
+
+    .cookpal-desc>p
+    {
+        width: auto;
+        text-wrap: wrap;
+    }
+
+
 }
