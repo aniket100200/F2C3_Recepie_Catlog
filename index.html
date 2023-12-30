@@ -15,7 +15,7 @@
 <body>
     <nav id="navbar">
        <div style="display: flex; align-items: center; gap: 10px;">
-            <span id="bar" style="display: none;"><i class="fa-solid fa-bars"></i></span>
+            <span id="bar" style="display: none;" onclick="popupPlay()"><i class="fa-solid fa-bars"></i></span>
          <img src="./cookpal.svg" alt="cookpal">
        </div>
         <div class="part2">
@@ -24,9 +24,23 @@
                 <li><a href="#">Explore</a></li>
                 <li><a href="#">Help</a></li>
             </ul>
-            <span class="profile">
-                <h1>A</h1>
-            </span>
+            <div class="profile" style="display: flex; justify-content: center; align-items: center;"> <img src="https://imgs.search.brave.com/NEsmN62PWfJ5Sl_E9ghmCE9PLOzgW0W16Jyn-aw3esw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMnFw/MHNpb3RsYTc0Ni5j/bG91ZGZyb250Lm5l/dC9pbWcvdXNlLWNh/c2VzL3Byb2ZpbGUt/cGljdHVyZS90ZW1w/bGF0ZV8wLmpwZw" alt="random"></div>
+        </div>
+        <div class="popup" style="display: none;">
+            <div style="background-color: white; width: 50%;">
+                <div style="display: flex; justify-content: space-between; margin: 10px;">
+                    <img src="./cookpal.svg" alt="cookpal">
+                   <div class="profile" style="display: flex; justify-content: center; align-items: center;"> <img src="https://imgs.search.brave.com/NEsmN62PWfJ5Sl_E9ghmCE9PLOzgW0W16Jyn-aw3esw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMnFw/MHNpb3RsYTc0Ni5j/bG91ZGZyb250Lm5l/dC9pbWcvdXNlLWNh/c2VzL3Byb2ZpbGUt/cGljdHVyZS90ZW1w/bGF0ZV8wLmpwZw" alt="random"></div>
+                </div>
+                <ul>
+                    <li><a href="#" style="color: green;">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div onclick="popupPlay()" style="width: 50%;">
+                           
+            </div>
         </div>
     </nav>
 

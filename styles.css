@@ -319,7 +319,6 @@ ul a :active{
     background-color: green;
 }
 
-
 /*media Queries*/
 @media screen and (max-width:768px)
 {
@@ -349,14 +348,15 @@ ul a :active{
 
     .rating
     {
-        display: flex;
-        align-items: center;
+       
     }
 
     .rating>.options
     {
         display: flex;
         gap: 10px;
+        padding-left: 20px;
+        margin-bottom: 30px;
     }
 
     .display{
@@ -372,7 +372,7 @@ ul a :active{
     /*card*/
     .card
     {        
-        margin: 0;
+        margin: 15px;
         font-size: small;
         margin-right: 10px;
     }
@@ -401,6 +401,37 @@ ul a :active{
         width: auto;
         text-wrap: wrap;
     }
-
-
 }
+
+.popup
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile img
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.popup  a
+{
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+}
+
+.popup ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
