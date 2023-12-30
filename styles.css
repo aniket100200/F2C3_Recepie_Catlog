@@ -411,7 +411,7 @@ ul a :active{
     bottom: 0;
     right: 0;   
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
 }
 
 .profile img

@@ -231,3 +231,21 @@ function popupPlay()
    }
    else popup.style.display="none";
 }
+
+
+let form=document.querySelector(".input-form");
+
+form.addEventListener('submit',(event)=>
+{
+    let searchItem=document.querySelector("#search-item");
+    let val=searchItem.value;
+    cards.innerHTML="";
+    data.forEach(e=>{
+
+        if(e.name.toLowerCase().indexOf(val.toLowerCase())!=-1){
+            mamu(e);
+        }
+        else if(val=="") mamu(e);
+    });
+});
+
