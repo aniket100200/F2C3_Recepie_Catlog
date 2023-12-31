@@ -237,15 +237,18 @@ let form=document.querySelector(".input-form");
 
 form.addEventListener('submit',(event)=>
 {
+    event.preventDefault();
     let searchItem=document.querySelector("#search-item");
     let val=searchItem.value;
     cards.innerHTML="";
-    data.forEach(e=>{
+    index=0;
+    data.forEach(e=>
+        {
 
-        if(e.name.toLowerCase().indexOf(val.toLowerCase())!=-1){
+        if(e.name.toLowerCase().indexOf(val.toLowerCase())!=-1)
+        {
             mamu(e);
         }
-        else if(val=="") mamu(e);
     });
 });
 
